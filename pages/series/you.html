@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pagina tucosn play">
+    <meta name="keybords" content="ver, serie, peliculas, tendencias, terror, accion, alice in boarding, madre, rapido, furioso, manifiesto">
+    <meta name="author" content="German André Rusco, Priscila Belen Garcia Moya, Marcelo Gabriel Leiva, Lucas Ranalletta, Maria Eugenia Caceres Herrera">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Tucson Play</title>
+</head>
+<body>
+    <header>
+          <!-- ACA VA EL NAVBAR -->
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+               <a class="navbar-brand px-4" href="../../index.html" id="tucsonPlayLogo"><img  src="/img/fondosin.png" alt="tucsonplay"></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item px-3 border">
+                    <a class="nav-link active" aria-current="page" href="../../pages/miLista.html"
+                      >Mi lista</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown px-4 border">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="pages/categorias.html"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Categorias
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../accion.html">Acción</a></li>
+                      <li><a class="dropdown-item" href="../cienciaFiccion.html">Ciencia ficcion</a></li>
+                      <li><a class="dropdown-item" href="../suspenso.html">Suspenso</a></li>
+                      <li><a class="dropdown-item" href="../terror.html">Terror</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item px-4 border">
+                    <a class="nav-link" href="../contacto.html">Contacto</a>
+                  </li>
+      
+                  <li class="nav-item px-4 border">
+                    <a class="nav-link" href="../series.html">Series</a>
+                  </li>
+                  <li class="nav-item px-4 border">
+                    <a class="nav-link" href="../peliculas.html">Peliculas</a>
+                  </li>
+                  <li class="nav-item px-4 border">
+                    <a class="nav-link" href="../suscripcion.html">Suscribirse</a>
+                  </li>
+      
+                  <li class="nav-item px-4 border">
+                    <a class="nav-link" href="../quienesSomos.html">¿Quienes Somos?</a>
+                  </li>
+      
+                  <form class="d-flex">
+                    <input
+                      class="form-control"
+                      type="search"
+                      placeholder="¿Que quieres ver?"
+                      aria-label="Search"
+                    />
+                    <a href="../logIn.html" class="btn btn-danger" type="submit" id="btnLogin">
+                      login
+                    </a>
+                  </form>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- ACA TERMINO EL NAVBAR -->
+    </header>
+    <main class="container">
+      <article class="card mb-3">
+        <video controls poster="/img/series/Portada/You/portadaYou.jpg">
+          <source src="../../video/series/You/Temporada 1/YOU NETFLIX SERIE AUDIO LATINO TRAILER (720p_24fps_H264-192kbit_AAC).mp4" type="video/mp4">
+        </video>
+        <div class="card-body">
+          <h5 class="card-title">You</h5>
+          <ul class="list-group">
+            <li class="list-group">Temporadas 3</li>
+            <li class="list-group">+16</li>
+            <li class="list-group">Lanzamiento: 2018</li>
+            <li class="list-group">Calidad: HD</li>
+          </ul>
+          <hr>
+          <p class="card-text">Un joven profundamente obsesivo y peligrosamente seductor mueve cielo y tierra para instalarse en la vida de aquellas por quienes se siente cautivado.</p>
+          <div class="d-flex justify-content-end">
+            <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+            <a href="../../pages/error404.html" class="btn btn-secondary tamañoLetra">+Agregar</a>
+          </div>
+        </div>
+      </article>
+      <section>
+        <article class="accordion" id="acordionTemporada">
+          <aside class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Temporada 1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#acordionTemporada">
+              <div class="accordion-body">
+                <!-- Comienza los capítulos de la Temporada 1 -->
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 1.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 1">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 1: Piloto. - 48 min.</h5>
+                        <p class="card-text">Un primer encuentro soñado pronto se convierte en pesadilla luego de que el encargado de una librería se interesa demasiado por una estudiante de posgrado.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 margenBoton tamañoLetra"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 2.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 2">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 2: El último tipo agradable de Nueva York. - 45 min.</h5>
+                        <p class="card-text">Beck esquiva las insinuaciones que le hace su asesor de tesis y lleva a Joe a una fiesta de Peach para ricos. Joe intenta resolver el tema de Benji.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 margenBoton tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 3.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 3">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 3: Tal vez. - 43 min.</h5>
+                        <p class="card-text">Joe no se esperaba los encuentros casuales de Beck y un enfrentamiento con la policía, y luego piensa que debe resolver una situación clave.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 4.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 4">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 4: El capitán. - 43 min.</h5>
+                        <p class="card-text">Traspasar una tarde incómoda con Beck, Joe descubre que no es el único que esconde secretos. Peach se muestra cada vez más antipática con él.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 5.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 5">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 5: Viviendo con el enemigo. - 46 min.</h5>
+                        <p class="card-text">Annika sufre por un video del pasado. Jose y Peach siguen sacándose chispas y todo explota cuando ella le presenta a Beck a un agente literario importante.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 6.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 6">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 6: Amour fou. - 45 min.</h5>
+                        <p class="card-text">Beck se va a Connecticut con Peach, cuyos verdaderos motivos no son los que parecen. La cacería de Joe le trae viejos recuerdos y abre nuevas heridas.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 7.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 7">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 7: Totalidad. - 42 min.</h5>
+                        <p class="card-text">Beck va a terapia para atravesar el duelo, y Joe hace lo mismo, peor por otras razones. Mientras tanto, sus planes para el cumpleaños de Beck no salen como quería.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 8.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 8">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 8: Soy tuyo. - 45 min.</h5>
+                        <p class="card-text">Después de tres meses de separados, la vida les sonríe a Joe y Beck, pero una serie de encuentros podrían perjudicar la relación actual de él.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 9.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 9">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 9: Candance. - 45 min.</h5>
+                        <p class="card-text">¿Y qué pasó con Candance exactamente? Beck se comporta como Joe para averiguarlo.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 1/Capitulo 10.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 10">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 10: El castillo de Barba Azul. - 50 min.</h5>
+                        <p class="card-text">Joe hace malabares entre los problemas que tiene con Paco y Beck, y encima tiene que lidiar con un detective privado. Pero, de una forma u otra, se acerca el final…</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </aside>
+          <aside class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Temporada 2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#acordionTemporada">
+              <div class="accordion-body">
+                <!-- Comienza los capítulos de la Temporada 2 -->
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 1.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 1">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 1: Borrón y cuenta nueva. - 50 min.</h5>
+                        <p class="card-text">Joe se cambia el nombre y se muda a la ciudad más superficial de todas con el plan de abrir un nuevo capítulo. Además de romántico, es optimista.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 2.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 2">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 2: Solo la puntita. - 50 min.</h5>
+                        <p class="card-text">Joe se da cuenta de que Will Bettelheim no es todo lo que prometía ser y podría su nueva relación con Love, pero el amor es más fuerte.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 3.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 3">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 3: Amigos son los amigos. - 50 min.</h5>
+                        <p class="card-text">Joe le da una oportunidad al amor platónico y trata de no meterse en los asuntos de Ellie. Después de todo, la intención es lo que cuenta. </p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 4.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 4">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 4: El bueno, el malo y Hendy. - 49 min.</h5>
+                        <p class="card-text">Compartir a Love con Forty no es nada fácil, pero Joe siempre está dispuesto a cambiar y nunca rechaza nuevos desafíos. ¿Y Ellie que estará haciendo?</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 5.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 5">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 5: ¡Buen findelasalud, Joe! - 50 min.</h5>
+                        <p class="card-text">Love invita a Joe a un fin de semana de meditación y actividades saludables, y Forty llega con una sorpresa. Seguro que todos juntos alcanzan la iluminación.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 6.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 6">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 6: Adiós, mi conejito. - 46 min.</h5>
+                        <p class="card-text">Joe sigue de cerca un problema, pero sospecha que hay alguien más dando vueltas. Love sigue luchando con los recuerdos traumáticos.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 7.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 7">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 7: Crisis existencial. - 51 min.</h5>
+                        <p class="card-text">Joe recurre a todo para pasar el mal de amores: medicina alternativa, tecnología moderna y tragos con Delilah. A pesar de todo, termina contra la pared.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 8.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 8">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 8: Pánico y locura en Beverly Hills. - 48 min.</h5>
+                        <p class="card-text">Joe tiene cosas más importantes que hacer, pero Forty insiste con el guion. El proceso creativo es largo, aunque la mente siempre encuentra atajos.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 9.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 9">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 9: Detective Joe. - 45 min.</h5>
+                        <p class="card-text">Love cuida a Eliie, que está cada vez más inquieta, mientras Joe trata de reconstruir el viaje abstracto de la noche anterior sin mucho éxito.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 2/Capitulo 10.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 10">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 10: Realmente amor. - 50 min.</h5>
+                        <p class="card-text">Joe es un abismo de sorpresas, peor Love también tiene sus secretos. ¿Será el principio del fin? ¿O hay gato encerrado?</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </aside>
+          <aside class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Temporada 3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#acordionTemporada">
+              <div class="accordion-body">
+                <!-- Comienza los capítulos de la Temporada 3 -->
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 1.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 1">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 1: Y vivieron felices para siempre. - 52 min.</h5>
+                        <p class="card-text">Después de una sorpresa en la sala de parto, el flamante papá tiene problemas para conectarse con su bebé, pero no tiene reparos en dar rienda suelta a su nueva obsesión.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 2.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 2">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 2: Me casé con una asesina. - 51 min.</h5>
+                        <p class="card-text">Joe y Love van a terapia de pareja, pero sus problemas podrían necesitar un poco más que eso, y las fricciones entre ellos no son lo único que quieren hacer desaparecer.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 3.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 3">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 3: Síndrome de la mujer blanca desaparecida. - 44 min.</h5>
+                        <p class="card-text">Love se irrita por el incesante escrutinio de la prensa en la casa de al lado. Una enfermedad despierta en Joe viejos recuerdo y algo más.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 4.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 4">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 4: Unidos por madre Linda. - 47 min.</h5>
+                        <p class="card-text">Love actúa impulsivamente, y la pareja termina atada de manos. Aunque Joe intenta deshacer el problema de manera diferente a la habitual, el asunto lo supera.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 5.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 5">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 5: En el bosque. - 45 min.</h5>
+                        <p class="card-text">Con cierta reticencia, Joe acepta ir de caza con algunos vecinos, mientras que Love intenta manejar la relación que tiene con Theo.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 6.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 6">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 6: Un nuevo emprendimiento. - 53 min.</h5>
+                        <p class="card-text">Mientras su madre comienza un nuevo emprendimiento, a Love le preocupa un potencial cambio en su vida. Por su parte, Joe tiene una epifanía sobre sí mismo. </p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 7.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 7">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 7: Aquí todos estamos locos. - 51 min.</h5>
+                        <p class="card-text">Mientras Dottie cae en un pozo emocional, Love busca obtener información sobre la investigación de Matthew. Joe se empeña en desestabilizar al ex de Marienne. </p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 8.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 8">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 8: Aventura y desventura. - 51 min.</h5>
+                        <p class="card-text">Joe quiere imponerle a Love un cambio de vida, pero todo se descarrila rápidamente. Theo descubre hasta dónde llega la obsesión de Matthew.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 9.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 9">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 9: Señales de alerta. - 48 min</h5>
+                        <p class="card-text">Mientras Love se ocupa de atender a unos invitados inesperados, Joe toma una decisión drástica para conseguir lo que él desea.</p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="card mb-2">
+                  <div class="row g-0">
+                    <div class="col-md-5 col-lg-3">
+                      <img src="../../img/series/Capitulos/You/Temporada 3/Capitulo 10.jpg" class="rounded-start tamañoImagenCapitulo tamañoImagenCapituloMedio" alt="Capitulo 10">
+                    </div>
+                    <div class="col-md-7 col-lg-9">
+                      <div class="card-body tamañoCardLg tamañoCardMd">
+                        <h5 class="card-title">Capítulo 10: ¿Qué es el amor? - 60 min</h5>
+                        <p class="card-text">Mientras un asesinato reciente inunda las noticias, Joe sueña con su futuro junto a Marienne, pero el infierno parece un paraíso ante la furia que se desata en Love. </p>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <a href="../../pages/error404.html" class="btn btn-danger me-3 tamañoLetra margenBoton"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </aside>
+        </article>
+      </section>
+      <h4 class="my-4 text-center">Recomendaciones</h4>
+      <section class="row">
+        <aside class="col-md-6 col-lg-3 mb-3">
+          <article class="card">
+            <h5 class="card-title text-center">Alguien esta mintiendo</h5>
+            <img src="../../img/series/Portada/Alguien esta mintiendo/Temporada 1/AEM 1.jpg" class="card-img-top tamañoImagen" alt="Alguien esta mintiendo">
+            <div class="card-body tamañocard tamañoCardSm ">
+              <p class="card-text">Un castigo escolar reúne a cinco estudiantes muy distintos. Pero un homicidio - y los secretos - los mantendrán unidos hasta que se resuelva el misterio.</p>
+              <br>
+              <div class="d-flex justify-content-end">
+                <a href="../../pages/series/alguienEstaMintiendo.html" class="btn btn-danger"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+              </div>
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-6 col-lg-3 mb-3">
+          <article class="card">
+            <h5 class="card-title text-center">Dark</h5>
+            <img src="../../img/series/Portada/Dark/Temporada 1/serieDarkPortadaTemporada1.jpg" class="card-img-top tamañoImagen" alt="Dark">
+            <div class="card-body tamañocard tamañoCardSm ">
+              <p class="card-text">La desaparición de un niño lleva a cuatro familias a una frenética búsqueda, mientras descubren un misterio que abarca tres generaciones.</p>
+              <br>
+              <div class="d-flex justify-content-end">
+                <a href="../../pages/series/dark.html" class="btn btn-danger margenArriba margenArribaSugerencia"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+              </div>
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-6 col-lg-3 mb-3">
+          <article class="card">
+            <h5 class="card-title text-center">1899</h5>
+            <img src="../../img/series/Portada/1889/1889.jpg" class="card-img-top tamañoImagen" alt="1899">
+            <div class="card-body tamañocard tamañoCardSm ">
+              <p class="card-text">Año 1899. Cuando misteriosos eventos cambian el curso de un barco inmigrantes rumbo a Nueva York, un complejo enigma empieza a desvelarse para sus desconcertados pasajeros.  </p>
+              <div class="d-flex justify-content-end">
+                <a href="../../pages/series/1889.html" class="btn btn-danger margenArriba margenArribaSugerencia"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+              </div>
+            </div>
+          </article>
+        </aside>
+        <aside class="col-md-6 col-lg-3 mb-3">
+          <article class="card">
+            <h5 class="card-title text-center">28 dias</h5>
+            <img src="../../img/series/Portada/28 dias/28-days-haunted.jpg" class="card-img-top tamañoImagen" alt="28 dias">
+            <div class="card-body tamañocard tamañoCardSm ">
+              <p class="card-text">Tres equipos pasan 28 días cada uno en algunos de los lugares más embrujados de EE.UU. para un experimento paranormal basado en las teorías de Ed y Lorraine Warren.</p>
+              <div class="d-flex justify-content-end">
+                <a href="../../pages/series/28Dias.html" class="btn btn-danger margenArriba margenArribaSugerencia"><i class="bi bi-play-fill me-2 tamañoIcon"></i>Reproducir</a>
+              </div>
+            </div>
+          </article>
+        </aside>
+      </section>
+    </main>
+    <footer class="mt-5 bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container-fluid p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4"></section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="../error404.html" class="text-sm-center text-white"
+                    >Terminos y condiciones</a
+                  >
+                </li>
+                <li>
+                  <a href="../error404.html" class="text-sm-center text-white"
+                    >Politica de privacidad</a
+                  >
+                </li>
+                <li>
+                  <a href="../error404.html" class="text-sm-center text-white"
+                    >Politica de derecho de autor</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a
+                    href="../quienesSomos.html"
+                    class="text-sm-center text-white"
+                    >Acerca de nosotros
+                  </a>
+                </li>
+                <li>
+                  <a href="../contacto.html" class="text-sm-center text-white"
+                    >Contactanos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../suscripcion.html"
+                    class="text-sm-center text-white"
+                    >Suscribirse</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4 mb-md-0">
+              <ul class="list-unstyled mb-0">
+                <!-- Facebook -->
+                <li class="list-group">
+                  <a
+                    class="text-white text-sm-center"
+                    href="../error404.html"
+                    role="button"
+                    ><i class="bi bi-facebook text-white"></i> Facebook</a
+                  >
+                </li>
+
+                <!-- Twitter -->
+                <li class="list-group">
+                  <a
+                    class="text-white text-sm-center"
+                    href="../error404.html"
+                    role="button"
+                    ><i class="bi bi-twitter text-white"></i> Twitter</a
+                  >
+                </li>
+
+                <!-- Instagram -->
+                <li class="list-group">
+                  <a
+                    class="text-white text-sm-center"
+                    href="../error404.html"
+                    role="button"
+                    ><i class="bi bi-instagram text-white"></i> Instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(183,14,33,255)">
+        <p class="copyright">&copy; Grupo 5 - Comision 41i -2023</p> 
+        <a class="text-white" href="../../index.html">tucson play.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
